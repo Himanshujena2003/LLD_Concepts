@@ -18,7 +18,7 @@ class Product{
     private:
 
     static Product* obj;
-    // static mutex mtx;
+    static mutex mtx;
 
     Product(){
         cout<<"I am constructor \n";
@@ -26,17 +26,7 @@ class Product{
 
     public:
     static Product* getInstance(){
-        // lock_guard<mutex> lock(mtx); // Lock for thread safety
+        lock_guard<mutex> lock(mtx); // Lock for thread safety
         if(obj==nullptr){
             obj = new Product();
         }
-        return obj;
-    }
-};
-
-Product* Product::obj = nullptr;
-// mutex Product::mtx;
-
-int main(){
-    Product *p = Product::getInstance(); 
-}
