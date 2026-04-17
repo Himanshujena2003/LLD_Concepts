@@ -34,6 +34,7 @@ class Product{
     }
 };
 
+// type  classname scope_resolution_operator variable_name
 Product* Product::obj = nullptr;
 // mutex Product::mtx;
 
