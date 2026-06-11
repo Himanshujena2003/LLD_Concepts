@@ -1,3 +1,7 @@
+// It is like a publisher subscriber model
+// Used for event driven architecture ,notification system ,event bubling etc
+// If there is any change occured in a object the dependent object will notified of this change
+
 #include<iostream>
 #include<vector>
 #include<string>
