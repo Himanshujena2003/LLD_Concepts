@@ -102,4 +102,6 @@ int main(){
 
     //Upload another video
     channel->uploadVideo("Brown rang");
+
+    return 0;
 }
