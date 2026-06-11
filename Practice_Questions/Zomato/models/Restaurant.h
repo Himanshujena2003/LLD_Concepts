@@ -18,7 +18,6 @@ class Restaurant{
 
 
 
-
 };
 
 #endif
