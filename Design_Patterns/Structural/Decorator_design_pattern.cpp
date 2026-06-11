@@ -1,3 +1,6 @@
+// This design patter is used to add some functionality or some behavior at runtime to an object
+// Like adding features to an object without modifying original class
+
 #include<iostream>
 #include<string>
 
