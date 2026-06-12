@@ -1,26 +1,49 @@
 #ifndef USER_H
 #define USER_H
 
-#include<bits/stdc++.h>
+#include <string>
 #include "Cart.h"
 using namespace std;
 
-class User{
-    private:
-        int userId;
-        string name;
-        string location;
-        Cart *c;
-    
-    public:
-        User(const string& name,const string& location, int userId){
-            this->name = name;
-            this->location = location;
-            this->userId = userId;
-            c = new Cart();
-        } 
-        
-        
+class User {
+private:
+    int userId;
+    string name;
+    string address;
+    Cart* cart;
+
+public:
+    User(int userId, const string& name, const string& address) {
+        this->userId = userId;
+        this->name = name;
+        this->address = address;
+        cart = new Cart();
+    }
+
+    ~User() {
+        delete cart;
+    }
+
+    // Getters and Setters
+    string getName() const {
+        return name;
+    }
+
+    void setName(const string &n) {
+        name = n;
+    }
+
+    string getAddress() const {
+        return address;
+    }
+
+    void setAddress(const string &a) {
+        address = a;
+    }
+
+    Cart* getCart() const {
+        return cart;
+    }
 };
 
-#endif
+#endif // USER_H
