@@ -110,6 +110,14 @@ class RemoteController{
                 cout<<"No command assigned at button "<<idx<<endl;
             }
         }
+
+        ~RemoteController(){
+            for(int i=0;i<n;i++){
+                if(buttons[i]!=NULL){
+                    delete buttons[i];
+                }
+            }
+        }
 };
 
 
