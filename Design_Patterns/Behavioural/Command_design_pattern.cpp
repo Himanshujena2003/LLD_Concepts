@@ -28,7 +28,7 @@ class Light{
 class Fan{
     public:
         void on(){
-            std::cout<<"fan is on"<<"\n";
+            std::cout<<"Fan is on"<<"\n";
         }
 
         void off(){
