@@ -1,6 +1,12 @@
+/* Adapter pattern = Wrapper that converts an incompatible interface into the interface expected by the client, 
+allowing existing classes to work together without modification. */
+
+// Act as a translater between two or more incompatibel interfaces
+// Like language conversion one understand in english but other person don't know hindi so the translater translate it.
+
+
 #include<iostream>
 #include<string>
-
 
 //Adaptee
 class OldPrinter{
